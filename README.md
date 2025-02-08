@@ -1,4 +1,4 @@
-# Ashton Style - 52nd NSC-RC Web Technologies (Junior Category)  
+# 52nd NSC-RC Web Technologies (Junior Category)  
 
 ## 🔍 Project Description / 項目描述  
 This is **NOT the official Floriade website**. It was developed as part of the **52nd National Skills Competition Regional Contest (Taiwan) - Web Technologies (Junior Category)**.  
