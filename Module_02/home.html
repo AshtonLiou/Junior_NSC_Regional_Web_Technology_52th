@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is not the official Floriade website. It was developed for the 52nd NSC-RC Web Technologies (Junior Category) with modifications for learning and demonstration purposes. 本網站並非 Floriade 官方網站，而是基於第52屆全國技能競賽分區賽網頁技術青少年組之競賽題目進行開發，僅供學習與展示用途，與 Floriade 官方無任何關聯。">
+    <meta name="keywords"
+        content="Ashton Style, Floriade, 52nd NSC, Web Technologies, Junior Category, 第52屆全國技能競賽, 分區賽, 台灣, 網頁技術, 青少年組">
+    <meta name="author" content="Ashton Liou">
+    <meta property="og:title" content="Ashton Style - 52nd NSC-RC Web Technologies (Junior Category)">
+    <meta property="og:description"
+        content="Developed for the 52nd NSC-RC Web Technologies (Junior Category). Not affiliated with Floriade. 本網站非 Floriade 官方網站，僅供學習與展示用途。">
+    <meta property="og:image" content="https://ashtonliou.github.io/image/logo.jpg">
+    <meta property="og:url" content="https://ashtonliou.github.io/">
+    <meta name="twitter:title" content="Ashton Style - 52nd NSC-RC Web Technologies">
+    <meta name="twitter:description"
+        content="52nd NSC-RC Web Technologies (Junior Category). Not affiliated with Floriade. 本網站非 Floriade 官方網站，僅供學習與展示用途。">
+    <meta name="twitter:image" content="https://ashtonliou.github.io/image/logo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" href="./img/Floriade_LOGO.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./plugins/jquery/jquery.js" defer></script>
+    <script src="./plugins/bootstrap/bootstrap.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNP57BTVXR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TNP57BTVXR');
+    </script>
+    <script src="./js/main.js" defer></script>
+    <noscript>
+        <style>
+            body>*:not(#noscript) {
+                display: none;
+            }
+
+            #noscript {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100vw;
+                height: 100vh;
+                font-family: "微軟正黑體";
+                text-align: center;
+                background-color: #e8e8e8;
+
+                &>a {
+                    padding: .5rem;
+                    color: gray;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        background-color: lightgray;
+                    }
+                }
+            }
+        </style>
+        <div id="noscript" data-translate="noscript">
+            <h2 aria-label="此網站需要啟用JavaScript">此網站需要啟用 JavaScript</h2>
+            <a href="https://support.google.com/admanager/answer/12654?hl=zh-Hant" aria-label="開啟JavaScript設定"
+                title="開啟 JavaScript 設定" target="_blank" rel="noopener noreferrer">開啟 JavaScript 設定</a>
+        </div>
+    </noscript>
+    <title>Home • 52th_J17_NSC_RC</title>
+</head>
+
+<body>
+    <div class="modal fade" id="website-statement" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-hidden="true" aria-labelledby="website-statement-label">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="website-statement-label">Website Statement 網站聲明</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    This website is not the official Floriade website. It was developed based on the 52nd NSC (Taiwan) -
+                    Web Technologies (Junior Category). While the content references the
+                    competition requirements, it has been modified and optimized to better fit actual development needs
+                    rather than strictly following the original competition design.
+                    This website is for learning and demonstration purposes only and has no affiliation with the
+                    official Floriade organization.<br>
+                    本網站並非 Floriade
+                    官方網站，而是基於第52屆全國技能競賽分區賽網頁技術青少年組之競賽題目(台灣)進行開發。本網站內容雖然參考競賽題目要求，但並未完全依照原題設計，而是根據實際開發需求進行了一定程度的調整與優化。本網站僅供學習與展示用途，與
+                    Floriade 官方無任何關聯。<br>
+                    <a href="https://floriadeaustralia.com/" class="stretched-link" style="position: relative;"
+                        target="_blank" rel="noopener noreferrer">Go to the Official Floriade Website</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                        onclick="localStorage.setItem('lastVisit', new Date().toISOString().split('T')[0]);">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <a class="navbar-brand" href="./home.html" rel="noopener noreferrer">
+                <img src="./img/Floriade_LOGO.webp" width="70" height="70" style="user-select: none;" alt="Floriade logo by Ashton liou" draggable="false">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="animation: fade-in-bottom .2s ease-in-out forwards; opacity: 0;">
+                        <a class="nav-link" href="./home.html" rel="noopener noreferrer">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" style="animation: fade-in-bottom .2s .1s ease-in-out forwards; opacity: 0;">
+                        <a class="nav-link" href="./news.html" rel="noopener noreferrer">News</a>
+                    </li>
+                    <li class="nav-item" style="animation: fade-in-bottom .2s .2s ease-in-out forwards; opacity: 0;">
+                        <a class="nav-link" href="./discover.html" rel="noopener noreferrer">Discover</a>
+                    </li>
+                    <li class="nav-item" style="animation: fade-in-bottom .2s .3s ease-in-out forwards; opacity: 0;">
+                        <a class="nav-link" href="./tickets.html" rel="noopener noreferrer">Tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mt-5" style="width: clamp(19em, 90vw, 60em); animation: fade-in-bottom .4s .1s ease-in-out forwards; opacity: 0;">
+            <div id="carousel" class="carousel slide shadow-lg" style="border-radius: 20px; overflow: hidden;"
+                data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000">
+                        <img src="./img/img10.webp" class="d-block w-100 ratio ratio-16x9"
+                            style="min-height: 20em; object-fit: cover; user-select: none;" alt="carousel image 1" draggable="false">
+                        <div class="carousel-caption d-none d-md-block mx-5 text-dark"
+                            style="border-radius: 20px; background-color: var(--neutral-color-1); opacity: .8; animation: clip-left-to-right .2s .5s ease-in-out forwards; clip-path: inset(0 100% 0 0);">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="./img/img11.webp" class="d-block w-100 ratio ratio-16x9"
+                            style="min-height: 20em; object-fit: cover; user-select: none;" alt="carousel image 2" draggable="false">
+                        <div class="carousel-caption d-none d-md-block mx-5 text-dark"
+                            style="border-radius: 20px; background-color: var(--neutral-color-1); opacity: .8; animation: clip-left-to-right .2s .5s ease-in-out forwards; clip-path: inset(0 100% 0 0);">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="./img/img12.webp" class="d-block w-100 ratio ratio-16x9"
+                            style="min-height: 20em; object-fit: cover; user-select: none;" alt="carousel image 3" draggable="false">
+                        <div class="carousel-caption d-none d-md-block mx-5 text-dark"
+                            style="border-radius: 20px; background-color: var(--neutral-color-1); opacity: .8; animation: clip-left-to-right .2s .5s ease-in-out forwards; clip-path: inset(0 100% 0 0);">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev border-0 bg-dark" type="button" data-target="#carousel"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next border-0 bg-dark" type="button" data-target="#carousel"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="container my-4 text-center" style="animation: fade-in-bottom .3s .4s ease-in-out forwards; opacity: 0;">
+            <h1 class="py-2 border-success border-bottom border-5 fw-bold">活動資訊</h1>
+            <p class="w-75 mx-auto text-muted lead" style="animation: clip-left-to-right .2s .7s ease-in-out forwards; clip-path: inset(0 100% 0 0);">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corrupti tenetur alias, libero
+                perspiciatis debitis quaerat, eum facere quia iste dignissimos. Facilis natus, molestias iusto debitis
+                mollitia deleniti dolor incidunt!
+            </p>
+        </section>
+    </main>
+    <footer class="bg-light text-dark pt-4" role="contentinfo" style="z-index: 100;">
+        <div class="container text-center text-md-left">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 mb-3">
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#website-statement" aria-label="Open Website Statement">
+                        Website Statement
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-uppercase" id="quick-links-heading">Quick Links</h5>
+                    <ul class="list-unstyled" aria-labelledby="quick-links-heading">
+                        <li><a href="./home.html" class="text-dark">Home</a></li>
+                        <li><a href="./news.html" class="text-dark">News</a></li>
+                        <li><a href="./discover.html" class="text-dark">Discover</a></li>
+                        <li><a href="./tickets.html" class="text-dark">Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-uppercase" id="social-media-heading">Social Media</h5>
+                    <ul class="list-unstyled" aria-labelledby="social-media-heading">
+                        <li>
+                            <a href="https://ashtonliou.github.io/" class="text-dark" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit Ashton Style Blog (opens in a new tab)">Ashton Style Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://floriadeaustralia.com/" class="text-dark" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit Floriade Official Website (opens in a new tab)">Floriade Official
+                                Website</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://www.facebook.com/FloriadeAU/" class="text-dark" target="_blank"
+                                rel="noopener noreferrer" title="Floriade Facebook"
+                                aria-label="Visit Floriade Facebook (opens in a new tab)">
+                                <img src="./img/facebook.webp" width="30" height="30" alt="Floriade Facebook Logo" draggable="false">
+                            </a>
+                            <a href="https://www.instagram.com/floriade_australia/" class="text-dark" target="_blank"
+                                rel="noopener noreferrer" title="Floriade Instagram"
+                                aria-label="Visit Floriade Instagram (opens in a new tab)">
+                                <img src="./img/instagram.webp" width="30" height="30" alt="Floriade Instagram Logo" draggable="false">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mt-3 border-top" aria-label="Copyright Notice">
+            © 2025 Ashton Liou. Licensed under
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"
+                aria-label="Creative Commons BY-NC 4.0 License (opens in a new tab)">
+                CC BY-NC 4.0
+            </a>.
+        </div>
+    </footer>
+</body>
+
+</html>
